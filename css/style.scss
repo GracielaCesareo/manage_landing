@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+@import './partials/general-fixes';
+@import './partials/layout';
+@import './partials/vars';
+@import './partials/mixins';
+
+
+
+
+// Header component
+
+header{
+    height: 80px;
+    background-color: $white;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+
+        .navbar__menu{
+            ul{
+                display: flex;
+                .navbar__item{
+                    padding: 0 $size-20;
+                    a{
+                        &:hover{
+                            color: $darkgrayishblue;
+                        }
+                    }
+                }
+            }
+        }
+        .navabar__cta{
+            button{
+                @include button
+            }
+        }
+    }
+    
+    
+}
+
