@@ -110,13 +110,43 @@ header{
     padding: $size-40 0;
     .benefits-section__container{
         display: flex;
-
+        @media screen and (max-width: $tablet){
+            flex-direction: column;
+        }
+        .benefits-section__question{
+            @media screen and (max-width: $tablet){
+                text-align: center;
+                padding-bottom: 40px;
+            }
+        }
         .benefits-section__facts{
             .benefits-section__fact{
-                display: flex;
-
-                .benefits-section__index{
-                    @include label;
+                .benefits-section__heading{
+                    display: flex;
+                    align-items: center;
+                    @media screen and (max-width: $tablet){
+                        &:after{
+                            position:absolute;
+                            content:"";
+                            height:0px;
+                            width: 80%;
+                            border-top:60px solid lighten($brightred, 30%);
+                            right:0;
+                        }
+                    }
+                    .benefits-section__index{
+                        @include label;
+                        z-index: 3;
+                    }
+                    .benefits-section__title{
+                        z-index: 3;
+                    }
+                }
+                .benefits-section__info{
+                    padding-left: 125px;
+                    @media screen and (max-width: $tablet){
+                        padding-left: 0;
+                    }
                 }
             }
         }
