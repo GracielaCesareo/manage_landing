@@ -15,3 +15,14 @@
         background-color: lighten($brightred, 10%);
     }
 }
+
+@mixin label{
+    background: $brightred;
+    color: $white;
+    padding: 28px 40px;
+    border-radius: 36px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
