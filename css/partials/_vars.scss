@@ -12,8 +12,6 @@ $verypalered: hsl(13, 100%, 96%);
 $varylightgray: hsl(0, 0%, 98%);
 $white: hsl(0, 100%, 100%);
 
-
-
 /* Sizes*/
 
 $size-8: 8px;
@@ -25,4 +23,11 @@ $size-28: 28px;
 $size-32: 32px;
 $size-36: 36px;
 $size-40: 40px;
+
+/* Breakpoints*/ 
+
+$desktop: 1440px;
+$tablet: 768px;
+$bigmobile: 500px;
+$smallmobile: 375px;
 

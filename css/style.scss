@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
 @import './partials/general-fixes';
-@import './partials/layout';
 @import './partials/vars';
+@import './partials/layout';
 @import './partials/mixins';
 
 
@@ -17,11 +17,50 @@ header{
         justify-content: space-between;
         align-items: center;
         height: inherit;
-
+        position: relative;
         .navbar__menu{
+            z-index: 10;
+            @media screen and (max-width: $tablet){
+                position: absolute;
+                width: 100%;
+            }
+            .navbar__mobileicon{
+                display: none;
+                width: 30px;
+                height: 30px;
+                @media screen and (max-width: $tablet){
+                    display: block;
+                    float: right;
+                }
+                a{
+                    width: inherit;
+                    height: inherit;
+                    display: block;
+                    @media screen and (max-width: $tablet){
+                        background-image: url(../images/icon-hamburger.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    &.--active{
+                        background-image: url(../images/icon-close.svg);
+                    }
+                }
+            }
             ul{
                 display: flex;
+                @media screen and (max-width: $tablet){
+                    position: absolute;
+                    flex-direction: column;
+                    align-items: center;
+                    background: $white;
+                    width: 100%;
+                    top: 60px;
+                    display: none;
+                }
                 .navbar__item{
+                    @media screen and (max-width: $tablet){
+                        padding: $size-16 $size-20;
+                    }
                     padding: 0 $size-20;
                     a{
                         &:hover{
@@ -32,6 +71,9 @@ header{
             }
         }
         .navabar__cta{
+            @media screen and (max-width: $tablet){
+                display: none;
+            }
             button{
                 @include button
             }
@@ -41,3 +83,18 @@ header{
     
 }
 
+
+
+
+
+
+// Backdrop element
+.backdrop{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: hsl(0, 100%, 0%);
+    opacity: 0.5;
+}
