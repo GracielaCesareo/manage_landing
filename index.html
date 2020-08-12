@@ -4,18 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="./images/favicon.png">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.min.css">
-  <title>Frontend Mentor | Manage landing page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+  
+  <title>Manage landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+
 
   <!-- Header Component -->
     <header>
@@ -110,55 +108,162 @@
   <!-- Section Benefits -->
 
 
-  <!--
-  
-  
-  
+  <!-- Slider testimonials Component -->
+    <section class="testimonials-section">
+      <div class="testimonials-section__container container">
+        <h2>What they’ve said</h2>
 
-  What they’ve said
 
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
+        <section class="testimonials-section__slider">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="testimonials-section__card">
+                    <div class="testimonials-section__avatar img-container">
+                      <img src="./images/avatar-anisha.png" alt="">
+                    </div>
+                    <div class="testimonials-section__text">
+                      <p class="testimonials-section__title">Anisha Li</p>
+                      <p>
+                        “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="testimonials-section__card">
+                    <div class="testimonials-section__avatar img-container">
+                      <img src="./images/avatar-ali.png" alt="">
+                    </div>
+                    <div class="testimonials-section__text">
+                      <p class="testimonials-section__title">Ali Bravo</p>
+                      <p>
+                        “We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="testimonials-section__card">
+                    <div class="testimonials-section__avatar img-container">
+                      <img src="./images/avatar-richard.png" alt="">
+                    </div>
+                    <div class="testimonials-section__text">
+                      <p class="testimonials-section__title">Richard Watts</p>
+                      <p>
+                        “Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to
+                        everyone I talk to!”
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="testimonials-section__card">
+                    <div class="testimonials-section__avatar img-container">
+                      <img src="./images/avatar-shanai.png" alt="">
+                    </div>
+                    <div class="testimonials-section__text">
+                      <p class="testimonials-section__title">Shanai Gough</p>
+                      <p>
+                        “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        </section>
 
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
+        <div class="cta-section__button">
+          <button class="button">Get Started</button>
+        </div>
+      </div>
+    </section>
+  <!-- Slider testimonials Component -->
 
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
+  <!-- Section CTA -->
+    <section class="cta-section">
+      <div class="cta-section__container container">
+        <h2>Simplify how your team works today.</h2>
+        <div class="cta-section__button">
+          <button class="special-button">Get Started</button>
+        </div>
+      </div>
+    </section>
+  <!-- Section CTA -->
 
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
+  <!-- Footer Section -->
+    <footer>
+      <div class="footer__container container">
+        <div class="footer__social">
+          <div class="footer__brand img-container">
+            <img src="./images/logowhite.svg" alt="Manage Corp">
+          </div>
+          <div class="footer__sn">
+            <ul>
+              <li><a href="#" class="facebook"></a></li>
+              <li><a href="#" class="youtube"></a></li>
+              <li><a href="#" class="twitter"></a></li>
+              <li><a href="#" class="pinterest"></a></li>
+              <li><a href="#" class="instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contentpage">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">  Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <div class="footer__form">
+            <form action="#">
+              <input type="email" name="" id="" placeholder="Updates in your inbox…">
+              <button type="submit">Go</button>
+            </form>
+          </div>
+          <div class="footer__terms">
+            <p>Copyright 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- Footer Section -->
 
-  Get Started
-
-  Simplify how your team works today.
-  Get Started
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved -->
-
-  
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="https://gracielac.netlify.app" target="_blank">Graciela Cesareo</a>.
+  </div>
 
 
   <script src="./js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script>
+    new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3,
+      breakpoints:{
+        600: {
+          perView: 1
+        }
+      }
+    }).mount()
+  </script>
 </body>
 </html>
