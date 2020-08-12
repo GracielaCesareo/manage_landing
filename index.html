@@ -4,98 +4,266 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
   
-  <title>Frontend Mentor | Manage landing page</title>
+  <title>Manage landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Pricing
-  Product
-  About Us
-  Careers
-  Community
 
-  Get Started
+  <!-- Header Component -->
+    <header>
+      <div class="navbar container">
+        <div class="navbar__brand">
+          <a href="#">
+            <img src="./images/logo.svg" alt="Manage">
+          </a>
+        </div>
+        <div class="navbar__menu">
+          <div id="mobileMenu" class="navbar__mobileicon">
+            <a href="#"></a>
+          </div>
+          <ul>
+            <li class="navbar__item"><a href="#">Pricing</a></li>
+            <li class="navbar__item"><a href="#">Product</a></li>
+            <li class="navbar__item"><a href="#">About Us</a></li>
+            <li class="navbar__item"><a href="#">Careers</a></li>
+            <li class="navbar__item"><a href="#">Community</a></li>
+          </ul>
+        </div>
+        <div class="navabar__cta">
+          <button class="button">Get Started</button>
+        </div>
+      </div>
+    </header>
+  <!-- Header Component -->
 
-  Bring everyone together to build better products.
-
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
-
-  Get Started
-
-  What’s different about Manage?
-
-  Manage provides all the functionality your team needs, without 
-  the complexity. Our software is tailor-made for modern digital 
-  product teams. 
-
-  01
-  Track company-wide progress
-  See how your day-to-day tasks fit into the wider vision. Go from 
-  tracking progress at the milestone level all the way done to the 
-  smallest of details. Never lose sight of the bigger picture again.
-
-  02
-  Advanced built-in reports
-  Set internal delivery estimates and track progress toward company 
-  goals. Our customisable dashboard helps you build out the reports 
-  you need to keep key stakeholders informed.
-
-  03
-  Everything you need in one place
-  Stop jumping from one service to another to communicate, store files, 
-  track tasks and share documents. Manage offers an all-in-one team 
-  productivity solution.
-
-  What they’ve said
-
-  Anisha Li
-  “Manage has supercharged our team’s workflow. The ability to maintain 
-  visibility on larger milestones at all times keeps everyone motivated.”
-
-  Ali Bravo
-  “We have been able to cancel so many other subscriptions since using 
-  Manage. There is no more cross-channel confusion and everyone is much 
-  more focused.”
-
-  Richard Watts
-  “Manage allows us to provide structure and process. It keeps us organized 
-  and focused. I can’t stop recommending them to everyone I talk to!”
-
-  Shanai Gough
-  “Their software allows us to track, manage and collaborate on our projects 
-  from anywhere. It keeps the whole team in-sync without being intrusive.”
-
-  Get Started
-
-  Simplify how your team works today.
-  Get Started
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
-
+  <!-- Section Hero -->
+     <section class="hero-section"> 
+      <div class="hero-section__container container">
+        <div class="hero-section__cta">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>Manage makes it simple for software teams to plan day-to-day 
+            tasks while keeping the larger team goals in view.</p>
+          <button class="button">Get Started</button>
+        </div>
+        <div class="hero-section__img img-container">
+          <img src="./images/illustration-intro.svg" alt="">
+        </div>
+      </div>
+    </section>
+  <!-- Section Hero -->
   
+
+  <!-- Section Benefits -->
+     <section class="benefits-section">
+      <div class="benefits-section__container container">
+        <div class="benefits-section__question">
+          <h1>What’s different about Manage?</h1>
+          <p>Manage provides all the functionality your team needs, without 
+            the complexity. Our software is tailor-made for modern digital 
+            product teams.</p>
+        </div>
+        <div class="benefits-section__facts">
+          <div class="benefits-section__fact">
+            <div class="benefits-section__heading">
+              <div class="benefits-section__index">01</div>
+              <h3 class="benefits-section__title">Track company-wide progress</h3>
+            </div>
+            <div class="benefits-section__info">
+              <p class="benefits-section__text">
+                See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+              </p>
+            </div>
+          </div>
+          <div class="benefits-section__fact">
+            <div class="benefits-section__heading">
+              <div class="benefits-section__index">02</div>
+              <h3 class="benefits-section__title">Advanced built-in reports</h3>
+            </div>
+            <div class="benefits-section__info">
+              <p class="benefits-section__text">
+                Set internal delivery estimates and track progress toward company  goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+          </div>
+          <div class="benefits-section__fact">
+            <div class="benefits-section__heading">
+              <div class="benefits-section__index">03</div>
+              <h3 class="benefits-section__title">Everything you need in one place</h3>
+            </div>
+            <div class="benefits-section__info">
+              <p class="benefits-section__text">
+                Stop jumping from one service to another to communicate, store files,  track tasks and share documents. Manage offers an all-in-one team productivity solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- Section Benefits -->
+
+
+  <!-- Slider testimonials Component -->
+    <section class="testimonials-section">
+      <div class="testimonials-section__container container">
+        <h2>What they’ve said</h2>
+
+
+        <section class="testimonials-section__slider">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="testimonials-section__card">
+                    <div class="testimonials-section__avatar img-container">
+                      <img src="./images/avatar-anisha.png" alt="">
+                    </div>
+                    <div class="testimonials-section__text">
+                      <p class="testimonials-section__title">Anisha Li</p>
+                      <p>
+                        “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="testimonials-section__card">
+                    <div class="testimonials-section__avatar img-container">
+                      <img src="./images/avatar-ali.png" alt="">
+                    </div>
+                    <div class="testimonials-section__text">
+                      <p class="testimonials-section__title">Ali Bravo</p>
+                      <p>
+                        “We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="testimonials-section__card">
+                    <div class="testimonials-section__avatar img-container">
+                      <img src="./images/avatar-richard.png" alt="">
+                    </div>
+                    <div class="testimonials-section__text">
+                      <p class="testimonials-section__title">Richard Watts</p>
+                      <p>
+                        “Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to
+                        everyone I talk to!”
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="testimonials-section__card">
+                    <div class="testimonials-section__avatar img-container">
+                      <img src="./images/avatar-shanai.png" alt="">
+                    </div>
+                    <div class="testimonials-section__text">
+                      <p class="testimonials-section__title">Shanai Gough</p>
+                      <p>
+                        “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+          </div>
+        </section>
+
+        <div class="cta-section__button">
+          <button class="button">Get Started</button>
+        </div>
+      </div>
+    </section>
+  <!-- Slider testimonials Component -->
+
+  <!-- Section CTA -->
+    <section class="cta-section">
+      <div class="cta-section__container container">
+        <h2>Simplify how your team works today.</h2>
+        <div class="cta-section__button">
+          <button class="special-button">Get Started</button>
+        </div>
+      </div>
+    </section>
+  <!-- Section CTA -->
+
+  <!-- Footer Section -->
+    <footer>
+      <div class="footer__container container">
+        <div class="footer__social">
+          <div class="footer__brand img-container">
+            <img src="./images/logowhite.svg" alt="Manage Corp">
+          </div>
+          <div class="footer__sn">
+            <ul>
+              <li><a href="#" class="facebook"></a></li>
+              <li><a href="#" class="youtube"></a></li>
+              <li><a href="#" class="twitter"></a></li>
+              <li><a href="#" class="pinterest"></a></li>
+              <li><a href="#" class="instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contentpage">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">  Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <div class="footer__form">
+            <form action="#">
+              <input type="email" name="" id="" placeholder="Updates in your inbox…">
+              <button type="submit">Go</button>
+            </form>
+          </div>
+          <div class="footer__terms">
+            <p>Copyright 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- Footer Section -->
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://gracielac.netlify.app" target="_blank">Graciela Cesareo</a>.
   </div>
+
+
+  <script src="./js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script>
+    new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3,
+      breakpoints:{
+        600: {
+          perView: 1
+        }
+      }
+    }).mount()
+  </script>
 </body>
 </html>

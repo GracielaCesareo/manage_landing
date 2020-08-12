@@ -2,7 +2,7 @@
 
 ## Hello everyone! 👋
 
-This is my solution for the Frontend Mentor challenge called * Manage landing page *.
+This is my solution for the Frontend Mentor challenge called ***Manage landing page***.
 
 ## The challenge
 

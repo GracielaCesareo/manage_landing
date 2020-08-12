@@ -1,0 +1,28 @@
+// Button styles
+
+@mixin button{
+    padding: $size-12 $size-28;
+    background-color: $brightred;
+    border-radius: $size-24;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 15px 15px -15px $brightred;
+    -moz-box-shadow: 0px 15px 15px -15px $brightred;
+    box-shadow: 0px 15px 15px -15px $brightred;
+
+    &:hover{
+        background-color: lighten($brightred, 10%);
+    }
+}
+
+@mixin label{
+    background: $brightred;
+    color: $white;
+    padding: 15px 40px;
+    border-radius: 36px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
