@@ -8,3 +8,20 @@
         max-width: 100%;
     }
 }
+
+.half-column{
+    width: 50%;
+    @media screen and (max-width: $bigmobile){
+        width: 100%;
+    }
+}
+.max-w{
+    max-width: 70%;
+    @media screen and (max-width: $tablet){
+        max-width: 100%;
+    }
+}
+
+.title{
+    font-size: $size-40;
+}

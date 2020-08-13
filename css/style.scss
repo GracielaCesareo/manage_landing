@@ -197,6 +197,14 @@ header{
                 }
             }
         }
+
+        .glide__bullet{
+            width: $size-20;
+            height: $size-20;
+            border: solid 2px $brightred;
+            border-radius: 50%;
+            background-color: $white;
+        }
     }
 }
 
@@ -245,17 +253,18 @@ footer{
     .footer__container{
         display: flex;
         justify-content: space-between;
-        // display: grid;
-        // grid-template-rows: auto;
-        // grid-template-columns: 1fr 1fr 1fr;
         min-height: 150px;
         @media screen and (max-width: $tablet){
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
         .footer__social{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @media screen and (max-width: $tablet){
+                flex-direction: column-reverse;
+                margin-bottom: 10%;
+            }
         }
         .footer__sn{
             display: flex;
@@ -263,6 +272,10 @@ footer{
             ul{
                 display: flex;
                 justify-content: space-between;
+                @media screen and (max-width: $tablet){
+                    width: 100%;
+                    margin-bottom: 10%;
+                }
                 li{
                     padding: 0 10px;
                 }
@@ -310,8 +323,16 @@ footer{
         .footer__contentpage{
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width: $tablet){
+                margin-bottom: 10%;
+                
+            }
             ul{
                 margin-right: 150px;
+                @media screen and (max-width: $tablet){
+                    margin-right: 0;
+
+                }
                 &:first-child{
                     display: flex;
                     flex-direction: column;
@@ -339,6 +360,11 @@ footer{
             flex-direction: column;
             justify-content: space-between;
             text-align: right;
+            @media screen and (max-width: $tablet){
+                text-align: center;
+                margin-bottom: 10%;
+                position: relative;
+            }
             input{
                 border: none;
                 padding: 12px;
@@ -357,6 +383,13 @@ footer{
         }
         .footer__terms{
             margin: 0;
+            @media screen and (max-width: $tablet){
+                position: absolute;
+            bottom: -310px;
+            }
+            p{
+                margin-bottom: 0;
+            }
         }
     }
 
