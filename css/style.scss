@@ -369,11 +369,14 @@ footer{
                 border: none;
                 padding: 12px;
                 border-radius: 30px;
+                @media screen and (max-width: $tablet){
+                    width: 70%;
+                }
             }
             ::placeholder{
                 color: $darkgrayishblue;
             }
-            button{
+            #submitEmail{
                 color: $white;
                 background-color: $brightred;
                 padding: 12px 24px;
@@ -414,4 +417,12 @@ footer{
     top: 0;
     background-color: hsl(0, 100%, 0%);
     opacity: 0.5;
+}
+
+// Alert Error Message
+.alert-message{
+    display: none;
+    color: $brightred;
+    font-size: 14px;
+    text-align: left;
 }

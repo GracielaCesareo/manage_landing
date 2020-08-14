@@ -11,7 +11,7 @@
 
 .half-column{
     width: 50%;
-    @media screen and (max-width: $bigmobile){
+    @media screen and (max-width: $tablet){
         width: 100%;
     }
 }
